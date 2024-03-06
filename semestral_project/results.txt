@@ -1,0 +1,508 @@
+arm-linux-gnueabihf-gcc -g -std=gnu99 -O1 -Wall -I . -o game_state.o -c game_state.c
+game_state.c:19: warning: "MAX_INVADER_BULLETS" redefined
+   19 | #define MAX_INVADER_BULLETS 10
+      | 
+In file included from game_state.c:15:
+game.h:22: note: this is the location of the previous definition
+   22 | #define MAX_INVADER_BULLETS 4
+      | 
+game_state.c: In function ‘menu’:
+game_state.c:44:2: warning: implicit declaration of function ‘ledstrip_value’ [-Wimplicit-function-declaration]
+   44 |  ledstrip_value(led_mem_base, 0x0000000);
+      |  ^~~~~~~~~~~~~~
+game_state.c:75:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+   75 |    draw_text(buffer, 173, 10, 3, 3, 255, 255, 255, font14x16, title1);
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:78:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+   78 |    draw_text(buffer, 100, 50, 3, 3, 255, 255, 255, font14x16, title2);
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:96:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+   96 |    draw_text(buffer, 20, 130, 2, 2, 255, 255, 255, font8x16, str1);
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:97:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+   97 |    draw_text(buffer, 20, 170, 2, 2, 255, 255, 255, font8x16, str2);
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:98:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+   98 |    draw_text(buffer, 20, 210, 2, 2, 255, 255, 255, font8x16, str3);
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:106:47: warning: passing argument 5 of ‘objects2buffer_small’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  106 |     objects2buffer_small(buffer, 250, 130, 5, invaders_map); // used as cursor
+      |                                               ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:48:109: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   48 | void objects2buffer_small(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:113:47: warning: passing argument 5 of ‘objects2buffer_small’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  113 |     objects2buffer_small(buffer, 250, 170, 5, invaders_map);
+      |                                               ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:48:109: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   48 | void objects2buffer_small(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:120:47: warning: passing argument 5 of ‘objects2buffer_small’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  120 |     objects2buffer_small(buffer, 250, 210, 5, invaders_map);
+      |                                               ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:48:109: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   48 | void objects2buffer_small(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:128:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  128 |    draw_text(buffer, 173, 10, 3, 3, 255, 255, 255, font14x16, title1);
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:129:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  129 |    draw_text(buffer, 100, 50, 3, 3, 255, 255, 255, font14x16, title2);
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:130:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  130 |    draw_text(buffer, 20, 130, 2, 2, 255, 255, 255, font8x16, str1);
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:131:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  131 |    draw_text(buffer, 20, 170, 2, 2, 255, 255, 255, font8x16, str2);
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:132:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  132 |    draw_text(buffer, 20, 210, 2, 2, 255, 255, 255, font8x16, str3);
+      |                                                              ^~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:137:41: warning: passing argument 5 of ‘objects2buffer’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  137 |     objects2buffer(buffer, 320, 135, 5, invaders_map); // used as cursor
+      |                                         ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:44:103: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   44 | void objects2buffer(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:141:6: error: too many arguments to function ‘game’
+  141 |      game(buffer, parlcd_reg_base, led_mem_base, knobs_mem_base, game_diff, game_speed, game_diff, game_speed);
+      |      ^~~~
+In file included from game_state.c:15:
+game.h:46:6: note: declared here
+   46 | void game(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], unsigned char *parlcd_reg_base, unsigned char *led_mem_base, unsigned char *knobs_mem_base, int game_diff, int game_speed);
+      |      ^~~~
+game_state.c:144:41: warning: passing argument 5 of ‘objects2buffer’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  144 |     objects2buffer(buffer, 320, 195, 5, invaders_map);
+      |                                         ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:44:103: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   44 | void objects2buffer(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:151:41: warning: passing argument 5 of ‘objects2buffer’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  151 |     objects2buffer(buffer, 320, 255, 5, invaders_map);
+      |                                         ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:44:103: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   44 | void objects2buffer(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:159:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  159 |    draw_text(buffer, 173, 10, 3, 3, 255, 255, 255, font14x16, title1);
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:160:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  160 |    draw_text(buffer, 100, 50, 3, 3, 255, 255, 255, font14x16, title2);
+      |                                                               ^~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:161:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  161 |    draw_text(buffer, 20, 140, 3, 3, 255, 255, 255, font14x16, str1);
+      |                                                               ^~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:162:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  162 |    draw_text(buffer, 20, 200, 3, 3, 255, 255, 255, font14x16, str2);
+      |                                                               ^~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:163:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  163 |    draw_text(buffer, 20, 260, 3, 3, 255, 255, 255, font14x16, str3);
+      |                                                               ^~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c: In function ‘settings’:
+game_state.c:204:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  204 |   draw_text(buffer, 135, 50, 3, 3, 255, 255, 255, font14x16, setting_title);
+      |                                                              ^~~~~~~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:215:65: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  215 |      draw_text(buffer, 200, 130, 2, 2, 255, 255, 255, font8x16, fsize2);
+      |                                                                 ^~~~~~
+      |                                                                 |
+      |                                                                 unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:221:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  221 |      draw_text(buffer, 200, 130, 2, 2, 255, 255, 255, font14x16, fsize1);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:231:65: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  231 |      draw_text(buffer, 220, 170, 2, 2, 255, 255, 255, font8x16, speed1);
+      |                                                                 ^~~~~~
+      |                                                                 |
+      |                                                                 unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:237:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  237 |      draw_text(buffer, 220, 170, 2, 2, 255, 255, 255, font14x16, speed2);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:243:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  243 |      draw_text(buffer, 220, 170, 2, 2, 255, 255, 255, font14x16, speed3);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:251:65: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  251 |      draw_text(buffer, 300, 210, 2, 2, 255, 255, 255, font8x16, diff1);
+      |                                                                 ^~~~~
+      |                                                                 |
+      |                                                                 unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:257:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  257 |      draw_text(buffer, 300, 210, 2, 2, 255, 255, 255, font14x16, diff2);
+      |                                                                  ^~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:263:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  263 |      draw_text(buffer, 300, 210, 2, 2, 255, 255, 255, font14x16, diff3);
+      |                                                                  ^~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:269:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  269 |      draw_text(buffer, 300, 210, 2, 2, 255, 255, 255, font14x16, diff4);
+      |                                                                  ^~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:276:47: warning: passing argument 5 of ‘objects2buffer_small’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  276 |     objects2buffer_small(buffer, 250, 250, 5, invaders_map);
+      |                                               ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:48:109: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   48 | void objects2buffer_small(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:283:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  283 |    draw_text(buffer, 20, 130, 2, 2, 255, 255, 255, font8x16, setting1);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:284:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  284 |    draw_text(buffer, 20, 170, 2, 2, 255, 255, 255, font8x16, setting2);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:285:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  285 |    draw_text(buffer, 20, 210, 2, 2, 255, 255, 255, font8x16, setting3);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:286:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  286 |    draw_text(buffer, 20, 250, 2, 2, 255, 255, 255, font8x16, setting4);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:293:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  293 |      draw_text(buffer, 250, 140, 3, 3, 255, 255, 255, font14x16, fsize2);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:299:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  299 |      draw_text(buffer, 250, 140, 3, 3, 255, 255, 255, font14x16, fsize1);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:309:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  309 |      draw_text(buffer, 300, 200, 3, 3, 255, 255, 255, font14x16, speed1);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:315:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  315 |      draw_text(buffer, 300, 200, 3, 3, 255, 255, 255, font14x16, speed2);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:321:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  321 |      draw_text(buffer, 300, 200, 3, 3, 255, 255, 255, font14x16, speed3);
+      |                                                                  ^~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:329:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  329 |      draw_text(buffer, 415, 260, 3, 3, 255, 255, 255, font14x16, large_diff1);
+      |                                                                  ^~~~~~~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:335:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  335 |      draw_text(buffer, 415, 260, 3, 3, 255, 255, 255, font14x16, large_diff2);
+      |                                                                  ^~~~~~~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:341:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  341 |      draw_text(buffer, 415, 260, 3, 3, 255, 255, 255, font14x16, large_diff3);
+      |                                                                  ^~~~~~~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:347:66: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  347 |      draw_text(buffer, 415, 260, 3, 3, 255, 255, 255, font14x16, large_diff4);
+      |                                                                  ^~~~~~~~~~~
+      |                                                                  |
+      |                                                                  unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:354:46: warning: passing argument 5 of ‘objects2buffer_small’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  354 |     objects2buffer_small(buffer, 430, 15, 5, invaders_map);
+      |                                              ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:48:109: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   48 | void objects2buffer_small(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:361:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  361 |    draw_text(buffer, 5, 140, 3, 3, 255, 255, 255, font14x16, setting1);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:362:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  362 |    draw_text(buffer, 5, 200, 3, 3, 255, 255, 255, font14x16, setting2);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:363:62: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  363 |    draw_text(buffer, 5, 260, 3, 3, 255, 255, 255, font14x16, setting3);
+      |                                                              ^~~~~~~~
+      |                                                              |
+      |                                                              unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:364:63: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  364 |    draw_text(buffer, 380, 10, 3, 3, 255, 255, 255, font14x16, large_setting4);
+      |                                                               ^~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c: In function ‘how_to_play’:
+game_state.c:393:44: warning: passing argument 5 of ‘objects2buffer_small’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  393 |  objects2buffer_small(buffer, 380, 260, 5, invaders_map);
+      |                                            ^~~~~~~~~~~~
+In file included from game_state.c:14:
+graphics.h:48:109: note: expected ‘unsigned char *’ but argument is of type ‘const unsigned char *’
+   48 | void objects2buffer_small(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int width, unsigned char object[width]);
+      |                                                                                               ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+game_state.c:395:61: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  395 |  draw_text(buffer, 115, 50, 3, 3, 255, 255, 255, font14x16, how_to);
+      |                                                             ^~~~~~
+      |                                                             |
+      |                                                             unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:396:60: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  396 |  draw_text(buffer, 20, 130, 1, 1, 255, 255, 255, font8x16, how2);
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:397:60: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  397 |  draw_text(buffer, 20, 170, 1, 1, 255, 255, 255, font8x16, how3);
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:398:60: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  398 |  draw_text(buffer, 20, 210, 1, 1, 255, 255, 255, font8x16, how1);
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+game_state.c:399:61: warning: pointer targets in passing argument 10 of ‘draw_text’ differ in signedness [-Wpointer-sign]
+  399 |  draw_text(buffer, 300, 260, 2, 2, 255, 255, 255, font8x16, back);
+      |                                                             ^~~~
+      |                                                             |
+      |                                                             unsigned char *
+In file included from game_state.c:14:
+graphics.h:42:158: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   42 | void draw_text(union pixel buffer[LCD_WIDTH][LCD_HEIGHT], int x, int y, int x_size, int y_size, uint8_t r, uint8_t g, uint8_t b, font_descriptor_t* f, char* str);
+      |                                                                                                                                                        ~~~~~~^~~
+make: *** [Makefile:44: game_state.o] Error 1

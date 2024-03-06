@@ -1,0 +1,612 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Oct  9 05:21:28 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 22)
+TARGET_DIR = /tmp/$(shell whoami)
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+NIX_REMOTE = daemon
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 12)
+TARGET_EXE = main
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+LC_NUMERIC = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/grechdan
+# environment
+LC_ADDRESS = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/108/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/grechdan/Documents/APO/semestral_project
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/grechdan/.config/Code/CachedData/74b1f979648cc44d385a2286793c226e611f59e7
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.EJE2T1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/grechdan/Documents/APO/semestral_project
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 84)
+TARGET_GDB_PORT = $(TARGET_IP):12345
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'depend', line 1)
+MAKEFILE_LIST := Makefile depend
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 23)
+TARGET_USER = root
+# environment
+VSCODE_PID = 2672
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SESSION_MANAGER = local/grechdan-ubuntu:@/tmp/.ICE-unix/1667,unix/grechdan-ubuntu:/tmp/.ICE-unix/1667
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 14)
+TARGET_IP = 192.168.223.220
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = FrCmAV2GXFLNIDbPCISQ4W8SfdAp_-3WvtsbLJSJMyUzgfZHTDHR
+# environment
+PATH = /home/grechdan/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = en_US.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/grechdan/snap/code/common
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+SNAP = /snap/code/108
+# environment
+INVOCATION_ID = 7bcc88e5162e4e5ca4b79213ddae69e7
+# environment
+SNAP_REVISION = 108
+# environment
+SNAP_REAL_HOME = /home/grechdan
+# environment
+USERNAME = grechdan
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# makefile (from 'Makefile', line 31)
+OBJECTS = $(filter %.o,$(SOURCES:%.c=%.o)) $(filter %.o,$(SOURCES:%.cpp=%.o))
+# environment
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = grechdan
+# makefile (from 'Makefile', line 4)
+CPPFLAGS = -I .
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1720
+# environment
+DISPLAY = :0
+# environment
+USER = grechdan
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+SNAP_DATA = /var/snap/code/108
+# environment
+SNAP_CONTEXT = FrCmAV2GXFLNIDbPCISQ4W8SfdAp_-3WvtsbLJSJMyUzgfZHTDHR
+# makefile (from 'Makefile', line 37)
+LDFLAGS = -lrt -lpthread $(CFLAGS) $(CPPFLAGS)
+# environment
+MANAGERPID = 1545
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2626
+# environment
+_ = /snap/code/108/usr/share/code/code
+# environment
+LC_PAPER = en_US.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 5)
+CFLAGS = -g -std=gnu99 -O1 -Wall
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/grechdan/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:38979
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/grechdan
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-3de6d85a-1.71.2-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/108/usr/share/glib-2.0/schemas
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+NIX_PATH = nixpkgs=/nix/var/nix/profiles/per-user/grechdan/channels/nixpkgs:/nix/var/nix/profiles/per-user/grechdan/channels
+# environment
+SNAP_VERSION = 74b1f979
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 36)
+LINKER = $(CC)
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# makefile (from 'Makefile', line 6)
+CXXFLAGS = -g -std=gnu++11 -O1 -Wall
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 2)
+CXX = arm-linux-gnueabihf-g++
+# makefile (from 'Makefile', line 1)
+ 
+depend:2: *** missing separator.  Stop.
+
+CC = arm-linux-gnueabihf-gcc
+# makefile (from 'Makefile', line 11)
+SOURCES = main.c mzapo_phys.c mzapo_parlcd.c serialize_lock.c graphics.c game_state.c led_control.c knobs.c game.c font_prop14x16.c font_rom8x16.c
+# environment
+SNAP_USER_DATA = /home/grechdan/snap/code/108
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=141/1024=14%, Rehash=0, Collisions=7/182=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66310, inode 133452): 43 files, no impossibilities.
+
+# 43 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 44):
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
+
+%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 47):
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -o $@ -c $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+font_rom8x16.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+font_prop14x16.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+depend: main.c mzapo_phys.c mzapo_parlcd.c serialize_lock.c graphics.c game_state.c led_control.c knobs.c game.c font_prop14x16.c font_rom8x16.c font_types.h game.h game_state.h graphics.h knobs.h led_control.h mzapo_parlcd.h mzapo_phys.h mzapo_regs.h serialize_lock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 59):
+	echo '# autogenerated dependencies' > depend
+	$(CC) $(CFLAGS) $(CPPFLAGS) -w -E -M $(filter %.c,$(SOURCES)) \
+	  >> depend
+
+# Not a target:
+led_control.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+copy-executable: main
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 73):
+	ssh $(SSH_OPTIONS) -t $(TARGET_USER)@$(TARGET_IP) killall gdbserver 1>/dev/null 2>/dev/null || true
+	ssh $(SSH_OPTIONS) $(TARGET_USER)@$(TARGET_IP) mkdir -p $(TARGET_DIR)
+	scp $(SSH_OPTIONS) $(TARGET_EXE) $(TARGET_USER)@$(TARGET_IP):$(TARGET_DIR)/$(TARGET_EXE)
+
+# Not a target:
+font_rom8x16.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+led_control.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug: copy-executable main
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 88):
+	xterm -e ssh $(SSH_OPTIONS) $(SSH_GDB_PORT_FORWARD) -t $(TARGET_USER)@$(TARGET_IP) gdbserver :12345 $(TARGET_DIR)/$(TARGET_EXE) &
+	sleep 2
+	echo >connect.gdb "target extended-remote $(TARGET_GDB_PORT)"
+	echo >>connect.gdb "b main"
+	echo >>connect.gdb "c"
+	ddd --debugger gdb-multiarch -x connect.gdb $(TARGET_EXE)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+graphics.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dep: depend
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mzapo_parlcd.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+graphics.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mzapo_phys.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+game_state.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 70):
+	rm -f *.o *.a $(OBJECTS) $(TARGET_EXE) connect.gdb depend
+
+# Not a target:
+font_types.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+knobs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+game.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+font_prop14x16.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+knobs.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+led_control.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+game.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mzapo_parlcd.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+knobs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: main
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mzapo_phys.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run: copy-executable main
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 78):
+	ssh $(SSH_OPTIONS) -t $(TARGET_USER)@$(TARGET_IP) $(TARGET_DIR)/$(TARGET_EXE)
+
+# Not a target:
+graphics.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mzapo_parlcd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main: main.o mzapo_phys.o mzapo_parlcd.o serialize_lock.o graphics.o game_state.o led_control.o knobs.o game.o font_prop14x16.o font_rom8x16.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(LINKER) $(LDFLAGS) -L. $^ -o $@ $(LDLIBS)
+
+# Not a target:
+mzapo_regs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mzapo_phys.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+game_state.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+serialize_lock.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+game_state.o:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+serialize_lock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: dep all run copy-executable debug
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+serialize_lock.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+game.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=44/1024=4%, Rehash=0, Collisions=0/97=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 57 / storage = 604 B / avg = 10 B
+# current buf: size = 8162 B / used = 604 B / count = 57 / avg = 10 B
+
+# strcache performance: lookups = 120 / hit rate = 52%
+# hash-table stats:
+# Load=57/8192=1%, Rehash=0, Collisions=0/120=0%
+# Finished Make data base on Sun Oct  9 05:21:28 2022
+
+ 
